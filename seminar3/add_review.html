@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .input_frame {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="back_btn"><a href="index.html">Назад</a></button>
+    <div class="main_frame">
+      <div class="input_frame">
+        <label for="product_inp">Товар</label>
+        <!-- <input type="text" name="product_inp" class="product_inp" /> -->
+        <select name="product_inp" class="product_inp">
+          <!-- <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option> -->
+        </select>
+        <label for="review_inp">Отзыв</label>
+        <textarea
+          name="review_inp"
+          class="review_inp"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <button class="btn_send">Отправить</button>
+
+      <div class="review"></div>
+    </div>
+    <script src="add_review.js"></script>
+  </body>
+</html>
